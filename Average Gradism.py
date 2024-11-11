@@ -46,6 +46,7 @@ student2 = Student("Bob", "Taylor", "S124500", 18, 90)
 course1 = Course("L3 IT", "Data")
 course2 = Course("T Level DPDD", "Software")
 
+## adds grade to students and adds students to courses
 course1.add_student(student1)
 course1.add_student(student2)
 course1.assign_grade(student1, 95)
@@ -54,6 +55,7 @@ course1.assign_grade(student1, 93)
 student1.record_attendance(course1, True)
 student1.record_attendance(course2, False)
 average_grade = student1.calculate_average_grade()
+## prints average grade, unless there isnt anything
 if average_grade is not None:
     print("Average grade for", student1.first_name, ":", average_grade)
 else:
